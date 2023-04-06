@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <title>Document</title>
+</head>
+<body style="background-color: red;">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          background-color: black;
+          color: white;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+          color: white;
+        }
+        
+        input[type=submit] {
+          background-color: black;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: right;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #f36060;
+        }
+        
+        .container {
+          border-radius: 5px;
+          background-color:red;
+          padding: 20px;
+        }
+        
+        .col-25 {
+          float: left;
+          width: 25%;
+          margin-top: 6px;
+        }
+        
+        .col-75 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+        
+        /* Clear floats after the columns */
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        </style>
+        </head>
+        <body>
+            <div class="header">
+                <i class="fa-solid fa-bars" id="btnMenu"></i>
+                       <div id="listaMenu">
+                        
+                        <li><a href="index.html" id="itemFilme"><i class="fa-solid fa-film"></i> HOME</a></li>
+                   
+                     </div>
+                   </div>
+        <h1> Deixe sua opnião no formulário abaixo</h1>
+        <div class="container">
+          <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Qual o seu nome?</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Seu nome é...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lfilme">Qual seu filme favorito?</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lfilme" name="filme" placeholder="Seu filme favorito é...">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lserie">Qual sua série favorita?</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lserie" name="fserie" placeholder="Sua série favorita é...">
+            </div>
+          </div>  <div class="row">
+            <div class="col-25">
+              <label for="ldesenho">Qual é seu desenho favorito?</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="ldesenho" name="fdesenho" placeholder="Seu desenho favorito é..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="genero">Seu gênero favorito?</label>
+            </div>
+            <div class="col-75">
+              <select id="genero" name="genero">
+                <option value="açao">Ação</option>
+                <option value="comedia">Comédia</option>
+                <option value="Romance">Romance</option>
+                <option value="drama">Drama</option>
+                <option value="Documentario">Documentário</option>
+                <option value="suspense">Suspense</option>
+                <option value="terror">Terror</option>
+                <option value="ficçao">Ficção</option>
+                <option value="aventura">Aventura</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="policial">Filme policial</option>
+              </select>
+            </div>
+          </div>
+         
+          <br>
+          <div class="row">
+            <input type="submit" value="Enviar" >
+          </div>
+          
+          </form>
+        </div>
+       
+      
+       
+      
+        
+</body>
+</html>
